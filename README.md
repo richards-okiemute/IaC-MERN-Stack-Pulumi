@@ -76,7 +76,7 @@ Note: The python code references the Remote Docker images used to run the contai
 
 ### Configuring and Provisioning Containers
 
-Pass/run these environment variables in vai your terminal
+Pass/run these environment variables via your terminal
 ```bash
 pulumi config set pulumi-app:frontendPort 3001
 pulumi config set pulumi-app:backendPort 3000
