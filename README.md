@@ -1,6 +1,7 @@
 # Deploying a MERN Stack Application using Pulumi IaC
 Pulumi IaC project to deploy a MERN stack application on Docker.
 
+![Pulumi deployment resources graphical view]([https://github.com/richards-okiemute/IaC-MERN-Stack-Pulumi/](https://github.com/richards-okiemute/IaC-MERN-Stack-Pulumi/blob/main/images/pulumi%20resource%20graphical%20view.PNG))
 
 
 ## Technologies Used
