@@ -104,3 +104,10 @@ Open a browser to `http://localhost:3001` and you should see that the Boba Tea s
 See screenshot below:
 ![app deployed with pulumi](https://github.com/richards-okiemute/IaC-MERN-Stack-Pulumi/blob/main/images/puluminus.PNG)
 
+### Clean Up
+You can clean up the deployment resources by using the Pulumi destroy command below
+```bash
+pulumi destroy
+```
+![pulumi destroy](https://github.com/richards-okiemute/IaC-MERN-Stack-Pulumi/blob/main/images/pulumi%20destroy.PNG)
+
