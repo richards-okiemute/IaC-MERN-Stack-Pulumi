@@ -10,13 +10,13 @@ Pulumi IaC project to deploy a MERN stack application on Docker.
 
 * MERN Stack: The application stack. This includes:
 
-** MongoDB: The database technology.
+  * MongoDB: The database technology.
 
-** Express.js: The backend framework.
+  * Express.js: The backend framework.
 
-** React: The frontend library.
+  * React: The frontend library.
 
-** Node.js: The runtime environment.
+  * Node.js: The runtime environment.
 
 * Git/GitHub: Version control and remote repository management.
 
