@@ -93,7 +93,8 @@ Now, you can deploy the application using the pulumi command below:
 ```bash
 pulumi up
 ```
-
+See screenshot below:
+![pulumi up](https://github.com/richards-okiemute/IaC-MERN-Stack-Pulumi/blob/main/images/pulumi%20up.PNG)
 ### Accessing the Application
 Open a browser to `http://localhost:3001` and you should see that the Boba Tea shop is now deployed.
 
