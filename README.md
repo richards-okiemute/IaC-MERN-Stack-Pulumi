@@ -111,3 +111,7 @@ pulumi destroy
 ```
 ![pulumi destroy](https://github.com/richards-okiemute/IaC-MERN-Stack-Pulumi/blob/main/images/pulumi%20destroy.PNG)
 
+### Check Pulumi Stack to Confirm Resource Clean Up
+Your Pulumi stack should show zero resources after running `pulumi up`
+![pulumi stack](https://github.com/richards-okiemute/IaC-MERN-Stack-Pulumi/blob/main/images/pulumi%20destroy.png)
+
