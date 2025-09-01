@@ -97,4 +97,6 @@ pulumi up
 ### Accessing the Application
 Open a browser to `http://localhost:3001` and you should see that the Boba Tea shop is now deployed.
 
+See screenshot below:
+![app deployed with pulumi](https://github.com/richards-okiemute/IaC-MERN-Stack-Pulumi/blob/main/images/puluminus.PNG)
 
