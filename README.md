@@ -70,7 +70,7 @@ Open the `__main__.py` file and review it's content.
 import pulumi
 ```
 
-Refer to the `__main__.py` file for the complete python code.
+Refer to the [`__main__.py`](https://github.com/richards-okiemute/IaC-MERN-Stack-Pulumi/blob/main/__main__.py) file for the complete python code.
 
 Note: The python code references the Remote Docker images used to run the container for the application
 
