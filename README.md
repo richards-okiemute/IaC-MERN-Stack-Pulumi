@@ -30,7 +30,7 @@ Make sure you have the following tools installed:
 * Node.js (with npm)
 * Docker
 * Pulumi
-* Pulumi account nad PAT
+* Pulumi account and Personal Access Token (PAT)
 
 ### Creating The Pulumi Project
 Create a directory for the app and change into the directory by using the commands below in your terminal:
