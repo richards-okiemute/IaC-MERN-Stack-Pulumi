@@ -76,17 +76,19 @@ Note: The python code references the Remote Docker images used to run the contai
 
 ### Configuring and Provisioning Containers
 
-Pass the environment variables in the `python.dev.yaml` file into vai your terminal
+Pass/run these environment variables in vai your terminal
 ```bash
-config:
-  pulumi-app:frontendPort: "3001"
-  pulumi-app:backendPort: "3000"
-  pulumi-app:mongoPort: "27017"
-  pulumi-app:mongoHost: mongodb://mongo:27017
-  pulumi-app:database: cart
-  pulumi-app:nodeEnvironment: development
-  pulumi-app:protocol: http://
+pulumi config set pulumi-app:frontendPort 3001
+pulumi config set pulumi-app:backendPort 3000
+pulumi config set pulumi-app:mongoPort 27017
+pulumi config set set pulumi-app:mongoHost mongodb://mongo:27017
+pulumi config set pulumi-app:database cart
+pulumi config set pulumi-app:nodeEnvironment development
+pulumi config set pulumi-app:protocol http://
 ```
+
+This will automatically populate the [`python.dev.yaml`](https://github.com/richards-okiemute/IaC-MERN-Stack-Pulumi/blob/main/Pulumi.dev.yaml) file with the application confiuration
+![pulumi application environment config.](https://github.com/richards-okiemute/IaC-MERN-Stack-Pulumi/blob/main/images/environment-config.PNG)
 
 ### Deploy The Application Using Pulumi Up
 Now, you can deploy the application using the pulumi command below:
