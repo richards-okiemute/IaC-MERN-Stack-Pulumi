@@ -45,6 +45,21 @@ Run the command below to initialize the diectory with your desired programming l
 $ pulumi new python -y
 ```
 
+### Install Resource Provider (Pulumi_Docker provider for Python)
+Use the command below to activate a Python virtual environment (venv) and then install the pulumi_docker provider
+
+```bash
+source venv/bin/activate
+pip3 install pulumi_docker
+```
+You should see output showing the provider package being installed, just like for any Python package install. 
+Use the command below to add the package to the `requirements.txt` file by adding `pulumi_docker` on a new line at the end of the file.
+
+```bash
+$ echo "pulumi_docker" >> requirements.txt
+```
+
+
 ### Inspect your new project
 Open the `__main__.py` file and review it's content. 
 
@@ -54,8 +69,32 @@ Open the `__main__.py` file and review it's content.
 import pulumi
 ```
 
-Refer to the __main__.py file for the complete python code.
+Refer to the `__main__.py` file for the complete python code.
 
+Note: The python code references the Remote Docker images used to run the container for the application
 
+### Configuring and Provisioning Containers
+
+Pass the environment variables in the `python.dev.yaml` file into vai your terminal
+```bash
+config:
+  pulumi-app:frontendPort: "3001"
+  pulumi-app:backendPort: "3000"
+  pulumi-app:mongoPort: "27017"
+  pulumi-app:mongoHost: mongodb://mongo:27017
+  pulumi-app:database: cart
+  pulumi-app:nodeEnvironment: development
+  pulumi-app:protocol: http://
+```
+
+### Deploy The Application Using Pulumi Up
+Now, you can deploy the application using the pulumi command below:
+
+```bash
+pulumi up
+```
+
+### Accessing the Application
+Open a browser to `http://localhost:3001` and you should see that the Boba Tea shop is now deployed.
 
 
