@@ -81,7 +81,7 @@ Pass/run these environment variables via your terminal
 pulumi config set pulumi-app:frontendPort 3001
 pulumi config set pulumi-app:backendPort 3000
 pulumi config set pulumi-app:mongoPort 27017
-pulumi config set set pulumi-app:mongoHost mongodb://mongo:27017
+pulumi config set pulumi-app:mongoHost mongodb://mongo:27017
 pulumi config set pulumi-app:database cart
 pulumi config set pulumi-app:nodeEnvironment development
 pulumi config set pulumi-app:protocol http://
